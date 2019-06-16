@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#15a363"
+    tools:context="com.example.kesha.weddingcard1.MainActivity">
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:weightSum="100">
+    <RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="0dp"
+    android:layout_weight="50"
+        android:id="@+id/rela"
+    android:background="#47b483">
+
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@mipmap/logo"
+        android:id="@+id/img"
+        android:layout_marginLeft="20dp"
+        android:layout_alignStart="@+id/textview"
+        android:layout_marginTop="20dp"
+        android:layout_alignLeft="@+id/textview"></ImageView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textview"
+        android:layout_centerInParent="true"
+        android:layout_below="@+id/img"
+        android:text="Our company provides you the luxury of adding reminder with just few number of click unlike entering each and every details in reminder applications"
+        android:gravity="center"
+        android:padding="15dp"
+
+        android:textSize="20dp"
+        android:textColor="#fff"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#fff"
+        android:text="*you will find qr-code in wedding cards \u0026 telephone cards"
+        android:textSize="10dp"
+        android:layout_marginTop="6dp"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/textview"/>
+</RelativeLayout>
+
+        </LinearLayout>
+
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="90dp"
+
+        >
+
+
+
+    </RelativeLayout>
+</RelativeLayout>
+
+    <Button
+        android:layout_width="280dp"
+        android:layout_height="wrap_content"
+        android:text="Display data"
+        android:background="@mipmap/button1"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/notify"
+        android:textColor="#fff"
+        android:visibility="invisible"
+        android:layout_centerInParent="true"
+        android:onClick="notification"/>
+
+    <Button
+        android:layout_width="280dp"
+        android:layout_height="wrap_content"
+        android:text="Scan a wedding card"
+        android:textColor="#fff"
+        android:textSize="13dp"
+        android:layout_below="@+id/notify"
+        android:background="@mipmap/button1"
+        android:layout_centerInParent="true"
+        android:id="@+id/qrscanner"
+        android:layout_gravity="center"
+        android:onClick="qrscanner"
+        android:layout_marginTop="20dp"
+
+        />
+    <Button
+        android:layout_width="280dp"
+        android:layout_height="wrap_content"
+        android:textSize="13dp"
+        android:text="Scan a telephone card"
+        android:textColor="#fff"
+        android:layout_gravity="center"
+        android:background="@mipmap/button1"
+        android:layout_below="@+id/qrscanner"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:id="@+id/telephonecard"
+        android:onClick="qrscanner"
+        />
+
+
+</RelativeLayout>

@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#fff"
+    tools:context="com.example.kesha.weddingcard1.MainActivity">
+
+   <ImageView
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+         android:layout_marginTop="15dp"
+       android:id="@+id/ci"
+
+       android:src="@mipmap/ic_launcher_round"/>
+   <TextView
+       android:layout_width="wrap_content"
+       android:layout_marginTop="20dp"
+       android:textColor="#000000"
+       android:layout_toEndOf="@+id/ci"
+       android:layout_toRightOf="@+id/ci"
+       android:layout_height="wrap_content"
+       android:layout_marginLeft="5dp"
+       android:id="@+id/eventname"
+      />
+   <TextView
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:id="@+id/category"
+       android:layout_marginLeft="5dp"
+       android:textColor="#000000"
+       android:layout_toRightOf="@+id/ci"
+
+       android:layout_below="@+id/eventname"
+       android:layout_alignRight="@+id/ci"
+       />
+
+   <TextView
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:id="@+id/longitude"
+       android:visibility="invisible"
+       android:layout_below="@+id/category"
+       android:layout_alignRight="@+id/ci"
+       />
+   <TextView
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:id="@+id/latitude"
+       android:visibility="invisible"
+       android:layout_alignRight="@+id/ci"
+       android:layout_below="@+id/longitude"
+       />
+
+   <RelativeLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:background="#9e9d9d"
+       android:layout_below="@+id/ci">
+<Button
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:visibility="invisible"/>
+      <ImageView
+          android:layout_width="30dp"
+          android:layout_height="20dp"
+          android:src="@mipmap/mark"
+         android:layout_toLeftOf="@+id/navigate"
+          android:id="@+id/mark1"
+          android:layout_centerVertical="true"/>
+      <TextView
+          android:layout_width="wrap_content"
+          android:id="@+id/navigate"
+          android:textSize="15dp"
+          android:layout_height="wrap_content"
+          android:text="Click to get the direction"
+          android:layout_centerHorizontal="true"
+          android:layout_centerVertical="true"
+          android:textColor="#000"
+          android:layout_marginLeft="10dp"
+          android:background="#9e9d9d"
+           />
+   </RelativeLayout>
+
+
+</RelativeLayout>
